@@ -41,3 +41,12 @@
     ...
   </form>
   ```
+
+### Add a hidden iframe to avoid being redirected to google
+  ```html
+  <form action="..." method="post" target="hidden_iframe" onsubmit="submitted=true;">
+    ...
+  </form>
+
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/';}"></iframe>
+  ```
