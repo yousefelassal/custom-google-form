@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <form id="contact" action="https://docs.google.com/forms/d/e/1FAIpQLSewfo9Dlptq7dVZeS9JK9iQCVirIi4-_KIqkKTXLA1NgTP6Fg/formResponse" method="post">
+        <form id="contact" action="https://docs.google.com/forms/d/e/1FAIpQLSewfo9Dlptq7dVZeS9JK9iQCVirIi4-_KIqkKTXLA1NgTP6Fg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
           <h3>Form</h3>
           <h4>Contact us</h4>
           <fieldset>
@@ -61,5 +61,6 @@
           </fieldset>
         </form>
       </div>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='/';}"></iframe>
 </body>
 </html>
