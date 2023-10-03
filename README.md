@@ -17,3 +17,10 @@
   entry.1200479729=message
   ```
   
+### Place link as form action
+  change `viewform` to `formResponse`
+  ```html
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLSewfo9Dlptq7dVZeS9JK9iQCVirIi4-_KIqkKTXLA1NgTP6Fg/formResponse">
+    ...
+  </form>
+  ```
