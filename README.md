@@ -24,3 +24,20 @@
     ...
   </form>
   ```
+
+  add the `name` property to each one of our input fields and give them the value corresponding to the ids
+  ```html
+  <form action="...">
+    <input
+      placeholder="Your name"
+      type="text"
+      name="entry.1429682747"
+    >
+    <input
+      placeholder="Your Email Address"
+      type="email"
+      name="entry.1583891520"
+    >
+    ...
+  </form>
+  ```
